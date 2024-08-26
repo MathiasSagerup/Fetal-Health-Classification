@@ -31,13 +31,12 @@ def main(args: argparse.Namespace) -> None:
     if args.preprocess:
         #_run_preprocessing(args.building, config["data"], args.include_elhub)
         data_preprocessing(config)
-        print("hei")
     elif args.add_features:
         #_run_feature_building(args.building, config["data"])
         
         print("hallo")
     elif args.train:
-        print("hei")
+        print("train")
         train_model(config)
 
     elif args.predict:
